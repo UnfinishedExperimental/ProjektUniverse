@@ -1,0 +1,85 @@
+#  ==========================================================================
+#  Wavefront Material file
+#  Exported by Red-i Productions' "Riptide Pro"
+#  (a commercial plugin for Cinema 4D PC & Mac, R9.6 or later)
+#  
+#  Red-i Productions
+#  http://skinprops.com
+#  
+#  ==========================================================================
+
+newmtl default_Mat
+illum 2
+Kd 0.800000 0.800000 0.800000
+
+newmtl augustus
+Ns 50.781250
+illum 2
+Ka 1.000000 0.823529 0.431373
+Kd 1.000000 0.588235 0.352941
+map_Ka augustus.dds
+map_Kd augustus.dds
+map_d augustus.png
+
+newmtl jupiter
+Ns 50.781250
+illum 2
+Ka 1.000000 0.823529 0.431373
+Kd 1.000000 0.588235 0.352941
+map_Ka jupiter.dds
+map_Kd jupiter.dds
+map_d jupiter.dds
+
+newmtl Marble-01.3
+Ns 50.781250
+illum 2
+Ka 0.301961 0.301961 0.301961
+Kd 0.510000 0.510000 0.510000
+
+newmtl Metal_-_Gold
+Ns 50.781250
+illum 2
+Ka 1.000000 0.823529 0.431373
+Kd 1.000000 0.588235 0.352941
+
+newmtl steine
+illum 2
+Ka 0.301961 0.301961 0.301961
+Kd 1.000000 1.000000 1.000000
+map_Ka steinquader_bump.dds
+map_Kd steinquader_bump.dds
+bump steinquader_bump.dds
+
+newmtl applikation
+illum 2
+Ka 0.301961 0.301961 0.301961
+Kd 1.000000 1.000000 1.000000
+map_Ka applikation.dds
+map_Kd applikation.dds
+bump applikation_bump.dds
+
+newmtl bogen
+illum 2
+Ka 0.301961 0.301961 0.301961
+Kd 1.000000 1.000000 1.000000
+map_Ka bogen-klein.dds
+map_Kd bogen-klein.dds
+bump bogen-klein_bump.dds
+map_d bogen-klein.dds
+
+newmtl bogen_gross
+illum 2
+Ka 0.301961 0.301961 0.301961
+Kd 1.000000 1.000000 1.000000
+map_Ka bogen_gross.dds
+map_Kd bogen_gross.dds
+bump bogen_gross_bump.dds
+map_d bogen_gross.dds
+
+newmtl Mat
+illum 2
+Ka 0.301961 0.301961 0.301961
+Kd 1.000000 1.000000 1.000000
+map_Ka Beton.dds
+map_Kd Beton.dds
+bump Beton_bump.dds

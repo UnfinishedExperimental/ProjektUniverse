@@ -1,0 +1,22 @@
+<string-array>
+  <string>data/ships/testship.xml</string>
+  <string>data/ships/team1/team1_bomber.xml</string>
+  <string>data/ships/team1/team1_hunter.xml</string>
+  <string>data/ships/team1/team1_scout.xml</string>
+  <string>data/ships/team2/team2_bomber.xml</string>
+  <string>data/ships/team2/team2_hunter.xml</string>
+  <string>data/ships/team2/team2_scout.xml</string>
+  <string>data/weapons/testblaster.xml</string>
+  <string>data/projectiles/testshot.xml</string>
+  <string>data/weapons/testrocketlauncher.xml</string>
+  <string>data/projectiles/testrocket.xml</string>
+  <string>data/projectiles/smallshot.xml</string>
+  <string>data/projectiles/bigshot.xml</string>
+  <string>data/weapons/smallblaster.xml</string>
+  <string>data/weapons/bigblaster.xml</string>
+  <string>data/decoration/dec_1.xml</string>
+  <string>data/decoration/dec_2.xml</string>
+  <string>data/decoration/dec_3.xml</string>
+  <string>data/decoration/team1_mothership.xml</string>
+  <string>data/decoration/team2_mothership.xml</string>
+</string-array>

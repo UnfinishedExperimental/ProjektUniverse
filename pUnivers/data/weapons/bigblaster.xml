@@ -1,0 +1,8 @@
+<universetournament.shared.data.proto.BlasterConfig>
+  <uid>13</uid>
+  <name>big_blaster</name>
+  <description>schwerer Blaster</description>
+  <coolDownTime>350.0</coolDownTime>
+  <energyDrain>3</energyDrain>
+  <shotConfig>15</shotConfig>
+</universetournament.shared.data.proto.BlasterConfig>

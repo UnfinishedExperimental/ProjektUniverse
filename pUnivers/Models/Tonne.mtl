@@ -1,0 +1,18 @@
+newmtl file2SG
+illum 4
+Ns 0.20
+Kd 0.50 0.50 0.50
+Ks 0.20 0.20 0.20
+Ka 0.00 0.00 0.30
+Tf 1.00 1.00 1.00
+map_Kd metall_ton.dds
+Ni 1.00
+newmtl metall_rost1SG
+illum 4
+Ns 15.0
+Kd 1.00 1.00 1.00
+Ks 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Metall_rost.dds
+Ni 1.00

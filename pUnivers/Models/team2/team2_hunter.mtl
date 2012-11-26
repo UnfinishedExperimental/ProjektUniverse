@@ -1,0 +1,69 @@
+newmtl blinn5SG
+illum 4
+Kd 0.36 0.41 0.65
+Ka 1.00 1.00 1.00
+Tf 0.97 0.97 0.97
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl blinn6SG
+illum 4
+Kd 0.66 0.66 0.66
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl blinn7SG
+illum 4
+Kd 0.58 0.58 0.58
+Ka 1.00 1.00 1.00
+Tf 0.99 0.99 0.99
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl file2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd MetalLeaking0033_1_S.dds
+Ni 1.00
+newmtl file3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd metal_aircraft.tga
+Ni 1.00
+newmtl file4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd MetalGalvanize_schuessel.dds
+Ni 1.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pasted__file2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd MetalLeaking0033_1_S.dds
+Ni 1.00
+newmtl pasted__file2SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd MetalLeaking0033_1_S.dds
+Ni 1.00
+newmtl pasted__file4SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd MetalGalvanize_schuessel.dds
+Ni 1.00

@@ -1,0 +1,26 @@
+<universetournament.shared.data.proto.ProjectileConfig>
+  <uid>14</uid>
+  <name>small_shot</name>
+  <description>kleines Blaster-Projektil</description>
+  <renderconfig>
+    <shader__vertex>Phong.vert</shader__vertex>
+    <shader__frag>Phong.frag</shader__frag>
+    <objconf>
+      <file>Models/shot.obj</file>
+      <centered>false</centered>
+      <scale__type>DEPTH</scale__type>
+      <scale>2.0</scale>
+    </objconf>
+    <roclass>universetournament.client.rendering.geometrie.packed.RenderObjekt</roclass>
+    <shaderclass>universetournament.client.rendering.shaders.PhongShader</shaderclass>
+  </renderconfig>
+  <speed>75.0</speed>
+  <lifeTime>2.0</lifeTime>
+  <hullDamage>25</hullDamage>
+  <shieldDamage>25</shieldDamage>
+  <physic__props>
+    <mass>1.0</mass>
+    <radius>0.5</radius>
+  </physic__props>
+</universetournament.shared.data.proto.ProjectileConfig>
+

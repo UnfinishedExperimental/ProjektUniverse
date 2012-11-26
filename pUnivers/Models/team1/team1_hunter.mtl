@@ -1,0 +1,14 @@
+newmtl file1SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd MetalRivets0045_1_S.dds
+Ni 1.00
+newmtl metal_gelbSG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Metal_gelb.dds
+Ni 1.00

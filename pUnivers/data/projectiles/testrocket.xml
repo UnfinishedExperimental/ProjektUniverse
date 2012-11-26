@@ -1,0 +1,27 @@
+<universetournament.shared.data.proto.RocketConfig>
+  <uid>11</uid>
+  <name>Test-Rakete</name>
+  <description>einfaches Test-Rakete</description>
+  <renderconfig>
+    <shader__vertex>Phong.vert</shader__vertex>
+    <shader__frag>Phong.frag</shader__frag>
+    <objconf>
+      <file>Models/rocket.obj</file>
+      <centered>false</centered>
+      <scale__type>DEPTH</scale__type>
+      <scale>0.5</scale>
+    </objconf>
+    <roclass>universetournament.client.rendering.geometrie.packed.RenderObjekt</roclass>
+    <shaderclass>universetournament.client.rendering.shaders.PhongShader</shaderclass>
+  </renderconfig>
+  <speed>50.0</speed>
+  <lifeTime>5.0</lifeTime>
+  <hullDamage>200</hullDamage>
+  <shieldDamage>50</shieldDamage>
+  <physic__props>
+    <mass>1.0</mass>
+    <radius>0.5</radius>
+  </physic__props>
+  <constSpeedRot>75</constSpeedRot>
+</universetournament.shared.data.proto.RocketConfig>
+

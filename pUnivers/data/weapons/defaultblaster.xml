@@ -1,0 +1,8 @@
+<universetournament.shared.data.proto.BlasterConfig>
+  <uid>0</uid>
+  <name>unbenannt</name>
+  <description>keine Beschreibung</description>
+  <coolDownTime>0.0</coolDownTime>
+  <energyDrain>0</energyDrain>
+  <shotConfig>0</shotConfig>
+</universetournament.shared.data.proto.BlasterConfig>

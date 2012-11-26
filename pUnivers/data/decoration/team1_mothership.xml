@@ -1,0 +1,21 @@
+<universetournament.shared.data.proto.PDecConfig>
+  <uid>19</uid>
+  <name>team1_mothership</name>
+  <description>Mutterschiff von Team 1</description>
+  <renderconfig>
+    <shader__vertex>Phong.vert</shader__vertex>
+    <shader__frag>Phong.frag</shader__frag>
+    <objconf>
+      <file>Models/team1/mothership.obj</file>
+      <centered>false</centered>
+      <scale__type>ABSOLUTE</scale__type>
+      <scale>2.0</scale>
+    </objconf>
+    <roclass>universetournament.client.rendering.geometrie.packed.RenderObjekt</roclass>
+    <shaderclass>universetournament.client.rendering.shaders.PhongShader</shaderclass>
+  </renderconfig>
+  <pConf>
+    <mass>10000.0</mass>
+    <radius>50.0</radius>
+  </pConf>
+</universetournament.shared.data.proto.PDecConfig>

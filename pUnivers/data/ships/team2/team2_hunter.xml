@@ -1,0 +1,55 @@
+<universetournament.shared.data.proto.ShipConfig>
+  <uid>8</uid>
+  <name>team2_hunter</name>
+  <description>schneller jaeger</description>
+  <renderconfig>
+    <shader__vertex>Phong.vert</shader__vertex>
+    <shader__frag>Phong.frag</shader__frag>
+    <objconf>
+      <file>Models/team2/team2_hunter.obj</file>
+      <centered>true</centered>
+      <scale__type>DEPTH</scale__type>
+      <scale>5.0</scale>
+    </objconf>
+    <roclass>universetournament.client.rendering.geometrie.packed.RenderObjekt<!--universetournament.client.rendering.geometrie.packed.BackFrontTestRO--></roclass>
+    <shaderclass>universetournament.client.rendering.shaders.PhongShader</shaderclass>
+  </renderconfig>
+  <maxHitpoints>150</maxHitpoints>
+  <shieldCapacity>150</shieldCapacity>
+  <maxWeaponEnergy>25</maxWeaponEnergy>
+  <maxSpeed>40.0</maxSpeed>
+  <maxSpeedRot>0.0</maxSpeedRot>
+  <accForward>20.0</accForward>
+  <accBackward>15.0</accBackward>
+  <accStrafe>9.0</accStrafe>
+  <accRot>150</accRot>
+  <shieldRate>10.0</shieldRate>
+  <weaponRate>1.0</weaponRate>
+  <maxRockets>2</maxRockets>
+  <weapons class="linked-list">
+    <universetournament.shared.data.proto.WeaponContainer>
+      <weaponId>12</weaponId>
+      <position>
+        <coords>
+          <float>0.0</float>
+          <float>0.0</float>
+          <float>0.0</float>
+        </coords>
+      </position>
+    </universetournament.shared.data.proto.WeaponContainer>
+    <universetournament.shared.data.proto.WeaponContainer>
+      <weaponId>10</weaponId>
+      <position>
+        <coords>
+          <float>0.0</float>
+          <float>0.0</float>
+          <float>0.0</float>
+        </coords>
+      </position>
+    </universetournament.shared.data.proto.WeaponContainer>
+  </weapons>
+  <physic__props>
+    <mass>750.0</mass>
+    <radius>3.0</radius>
+  </physic__props>
+</universetournament.shared.data.proto.ShipConfig>

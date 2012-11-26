@@ -1,0 +1,15 @@
+<Texture Name="hud/hud00.dds" Width="1024" Height="512" ImageCount="13">
+	<Image Name="enemy_score_gfx" X="449" Y="317" Width="110" Height="183"></Image>
+	<Image Name="energy" X="633" Y="87" Width="304" Height="44"></Image>
+	<Image Name="frame_speed_right" X="0" Y="154" Width="449" Height="154"></Image>
+	<Image Name="frame_weapons_left" X="0" Y="0" Width="449" Height="154"></Image>
+	<Image Name="laser_gfx" X="633" Y="131" Width="302" Height="42"></Image>
+	<Image Name="numbers" X="0" Y="308" Width="256" Height="128"></Image>
+	<Image Name="player_score" X="449" Y="0" Width="184" Height="134"></Image>
+	<Image Name="rocket_prt" X="47" Y="436" Width="45" Height="43"></Image>
+	<Image Name="rockets_gfx" X="633" Y="44" Width="320" Height="43"></Image>
+	<Image Name="rockets_pc_front" X="0" Y="436" Width="47" Height="43"></Image>
+	<Image Name="shield" X="633" Y="0" Width="320" Height="44"></Image>
+	<Image Name="team_score" X="256" Y="308" Width="152" Height="167"></Image>
+	<Image Name="team_score_gfx" X="449" Y="134" Width="110" Height="183"></Image>
+</Texture>
