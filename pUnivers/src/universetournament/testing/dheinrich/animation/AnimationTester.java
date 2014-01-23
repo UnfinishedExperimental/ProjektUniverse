@@ -4,26 +4,10 @@
  */
 package universetournament.testing.dheinrich.animation;
 
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.io.File;
 import java.io.IOException;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import universetournament.client.UTClient;
-import universetournament.client.core.ClientWindow;
-import universetournament.client.rendering.Scene;
-import universetournament.client.rendering.geometrie.packed.BackFrontTestRO;
-import universetournament.client.rendering.geometrie.packed.RenderObjekt;
-import universetournament.client.rendering.ressourcen.resmanagment.ObjConfig;
-import universetournament.client.rendering.ressourcen.resmanagment.RessourcesLoader;
-import universetournament.client.rendering.shaders.PhongShader;
-import universetournament.client.util.io.obj.OBJObjektReader.Scale2;
-import universetournament.shared.logic.PJUTTimedRefreshable;
-import universetournament.shared.logic.entities.ingame.container.SimpleTransformation;
-import universetournament.shared.logic.entities.ingame.container.TransformationContainer;
-import universetournament.shared.util.math.Matrix4;
 import universetournament.shared.util.math.Quaternion;
 import universetournament.shared.util.math.Vec3;
 
@@ -31,8 +15,8 @@ import universetournament.shared.util.math.Vec3;
  *
  * @author some
  */
-public class AnimationTester
-{
+public class AnimationTester {
+
     public AnimationTester() {
         try {
             final FileHandler handler = new FileHandler("errors.txt");

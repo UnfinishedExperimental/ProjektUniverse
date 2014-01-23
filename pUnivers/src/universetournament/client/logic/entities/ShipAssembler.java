@@ -10,7 +10,7 @@ import universetournament.client.rendering.Scene;
 import universetournament.client.rendering.geometrie.packed.*;
 import universetournament.client.rendering.ressourcen.resmanagment.*;
 import universetournament.client.rendering.shaders.ShieldShader;
-import universetournament.client.util.io.obj.OBJObjektReader.Scale2;
+import universetournament.client.util.io.obj.ObjObjektReader.Scale;
 import universetournament.shared.events.GameEvent;
 import universetournament.shared.events.util.PJUTEventHandler;
 import universetournament.shared.logic.entities.*;
@@ -67,7 +67,7 @@ public class ShipAssembler implements PJUTEventHandler
                     lt.scale(new Vec3(r, r, r));
                     RenderObjekt shield = new RObject3(shieldShader, lt);
                     ObjConfig oc = new ObjConfig("Models/uvsphere32.obj", true,
-                    		Scale2.WIDTH, 1);
+                    		Scale.WIDTH, 1);
                     RessourcesLoader.getInstance().loadRenderObjekt(
                                 shield, oc, true);
                     PJUTPlayer p =ClientMainController.getInstance().

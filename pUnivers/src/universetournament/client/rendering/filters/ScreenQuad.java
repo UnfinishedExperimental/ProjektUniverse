@@ -10,15 +10,16 @@ import universetournament.client.rendering.ressourcen.resmanagment.ObjConfig;
 import universetournament.client.rendering.shaders.StandartShader;
 import universetournament.client.rendering.geometrie.packed.VBO;
 import universetournament.client.rendering.ressourcen.resmanagment.RessourcesLoader;
-import universetournament.client.util.io.obj.OBJObjektReader;
+import universetournament.client.util.io.obj.ObjObjektReader;
 import universetournament.shared.logic.entities.ingame.container.SimpleTransformation;
 
 /**
  * Initialisiert ein einzelnes Quad das als Screen Quad genutzt werden kann
+ *
  * @author Daniel Heinrich
  */
-public class ScreenQuad
-{
+public class ScreenQuad {
+
     private RenderObjekt quad;
     private StandartShader squad;
 
@@ -28,8 +29,8 @@ public class ScreenQuad
                                                   "ScreenQuad.frag");
         RenderObjekt ro = new RenderObjekt(squad, new SimpleTransformation());
         RessourcesLoader.getInstance().loadRenderObjekt(ro, new ObjConfig(
-                "Models/quad.obj", true, OBJObjektReader.Scale2.HEIGHT, 2f));
-                  
+                "Models/quad.obj", true, ObjObjektReader.Scale.HEIGHT, 2f));
+
         quad = ro;
     }
 

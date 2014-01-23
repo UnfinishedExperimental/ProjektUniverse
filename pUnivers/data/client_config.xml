@@ -5,15 +5,11 @@
   <frameLimit>100.0</frameLimit>
   <host>localhost</host>
   <port>6667</port>
-  <playerName>testplayer1</playerName>
-  <playerColor>-3407821</playerColor>
-  <shipConfig>1</shipConfig>
+  <playerName>Danny02</playerName>
+  <playerColor>-10027213</playerColor>
+  <shipConfig>4</shipConfig>
   <bindings>
     <keyBinds>
-      <entry>
-        <universetournament.client.config.KeyBindings_-CommandType>ACCEL_BACKWARD</universetournament.client.config.KeyBindings_-CommandType>
-        <int>83</int>
-      </entry>
       <entry>
         <universetournament.client.config.KeyBindings_-CommandType>QUIT_GAME</universetournament.client.config.KeyBindings_-CommandType>
         <int>27</int>
@@ -23,12 +19,16 @@
         <int>87</int>
       </entry>
       <entry>
-        <universetournament.client.config.KeyBindings_-CommandType>STRAFE_RIGHT</universetournament.client.config.KeyBindings_-CommandType>
-        <int>68</int>
-      </entry>
-      <entry>
         <universetournament.client.config.KeyBindings_-CommandType>STRAFE_LEFT</universetournament.client.config.KeyBindings_-CommandType>
         <int>65</int>
+      </entry>
+      <entry>
+        <universetournament.client.config.KeyBindings_-CommandType>ACCEL_BACKWARD</universetournament.client.config.KeyBindings_-CommandType>
+        <int>83</int>
+      </entry>
+      <entry>
+        <universetournament.client.config.KeyBindings_-CommandType>STRAFE_RIGHT</universetournament.client.config.KeyBindings_-CommandType>
+        <int>68</int>
       </entry>
     </keyBinds>
     <buttonBinds>

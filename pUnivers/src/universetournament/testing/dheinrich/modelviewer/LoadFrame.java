@@ -14,7 +14,7 @@ import universetournament.client.rendering.Scene;
 import universetournament.client.rendering.geometrie.packed.*;
 import universetournament.client.rendering.ressourcen.resmanagment.*;
 import universetournament.client.rendering.shaders.PhongShader;
-import universetournament.client.util.io.obj.OBJObjektReader.Scale2;
+import universetournament.client.util.io.obj.ObjObjektReader.Scale;
 import universetournament.shared.logic.entities.ingame.container.SimpleTransformation;
 import universetournament.shared.logic.entities.ingame.container.TransformationContainer;
 import universetournament.shared.util.math.Vec3;
@@ -23,8 +23,8 @@ import universetournament.shared.util.math.Vec3;
  *
  * @author dheinrich
  */
-public class LoadFrame extends JFrame
-{
+public class LoadFrame extends JFrame {
+
     private JButton load;
     private JButton colormode;
     private RenderObjekt normal, fb;
@@ -62,9 +62,9 @@ public class LoadFrame extends JFrame
         add2Pane(zslider);
     }
 
-    protected void add2Pane(Component c){
+    protected void add2Pane(Component c) {
         Container pane = this.getContentPane();
-        GridBagConstraints  gbc;
+        GridBagConstraints gbc;
         gbc = new GridBagConstraints(0, count++, 1, 1, 1, 1,
                                      GridBagConstraints.CENTER,
                                      GridBagConstraints.HORIZONTAL, new Insets(
@@ -74,8 +74,7 @@ public class LoadFrame extends JFrame
 
     protected void iniListener() {
         final Component t = this;
-        load.addActionListener(new ActionListener()
-        {
+        load.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser fc = new JFileChooser("./Models/");
                 fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -90,8 +89,7 @@ public class LoadFrame extends JFrame
             }
         });
 
-        colormode.addActionListener(new ActionListener()
-        {
+        colormode.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if (colormode.getText().equals("FB-On")) {
                     colormode.setText("FB-Off");
@@ -106,25 +104,25 @@ public class LoadFrame extends JFrame
             }
         });
 
-        xslider.addFloatListener(new FloatValueListener()
-        {
+        xslider.addFloatListener(new FloatValueListener() {
             public void valueChanged(float f) {
-                if (trans != null)
+                if (trans != null) {
                     trans.rotateEuler(new Vec3(f, 0, 0));
+                }
             }
         });
-        yslider.addFloatListener(new FloatValueListener()
-        {
+        yslider.addFloatListener(new FloatValueListener() {
             public void valueChanged(float f) {
-                if (trans != null)
+                if (trans != null) {
                     trans.rotateEuler(new Vec3(0, f, 0));
+                }
             }
         });
-        zslider.addFloatListener(new FloatValueListener()
-        {
+        zslider.addFloatListener(new FloatValueListener() {
             public void valueChanged(float f) {
-                if (trans != null)
+                if (trans != null) {
                     trans.rotateEuler(new Vec3(0, 0, f));
+                }
             }
         });
     }
@@ -140,7 +138,7 @@ public class LoadFrame extends JFrame
 //        trans.shiftWorldPosition(new Vec3f(5, -1, 5));
         normal = new RenderObjekt(p, trans);
         fb = new BackFrontTestRO(p, trans);
-        ObjConfig oc = new ObjConfig(file, true, Scale2.WIDTH,
+        ObjConfig oc = new ObjConfig(file, true, Scale.WIDTH,
                                      5);
 
         RessourcesLoader.getInstance().loadRenderObjekt(normal, oc);

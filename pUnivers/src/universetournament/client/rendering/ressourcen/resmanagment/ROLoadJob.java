@@ -8,7 +8,7 @@ import java.util.List;
 import universetournament.client.rendering.geometrie.packed.RenderObjekt;
 import universetournament.client.rendering.geometrie.unpacked.ModelObjekt;
 import universetournament.client.rendering.shaders.StandartShader;
-import universetournament.client.util.io.obj.OBJObjektReader;
+import universetournament.client.util.io.obj.*;
 
 /**
  *
@@ -26,7 +26,7 @@ public class ROLoadJob implements LoadJob<RenderObjekt>
     }
 
     public RenderObjekt load() {
-        OBJObjektReader oor = new OBJObjektReader(shader);
+        ObjObjektReader oor = new ObjObjektReader(shader);
         ModelObjekt mo = oor.loadObjekt(ljob);
         RenderObjekt ro = new RenderObjekt(shader, null, mo);
         synchronized (mcontainer) {

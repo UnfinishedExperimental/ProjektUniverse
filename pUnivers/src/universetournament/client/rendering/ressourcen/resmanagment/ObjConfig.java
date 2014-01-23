@@ -5,7 +5,7 @@
 package universetournament.client.rendering.ressourcen.resmanagment;
 
 import java.io.File;
-import universetournament.client.util.io.obj.OBJObjektReader.Scale2;
+import universetournament.client.util.io.obj.ObjObjektReader.Scale;
 
 /**
  *
@@ -15,22 +15,25 @@ public class ObjConfig
 {
     private File file;
     private boolean centered;
-    private Scale2 scale_type;
+    private Scale scale_type;
     private float scale;
+
+    public ObjConfig() {
+    }
 
     public ObjConfig(String file) {
         this(new File(file));
     }
 
     public ObjConfig(File file) {
-        this(file, false, Scale2.ABSOLUTE, 1f);
+        this(file, false, Scale.ABSOLUTE, 1f);
     }
 
-    public ObjConfig(String file, boolean centered, Scale2 s2, float scale) {
+    public ObjConfig(String file, boolean centered, Scale s2, float scale) {
         this(new File(file), centered, s2, scale);
     }
 
-    public ObjConfig(File obj, boolean centered, Scale2 s2, float scale) {
+    public ObjConfig(File obj, boolean centered, Scale s2, float scale) {
         this.file = obj;
         this.centered = centered;
         this.scale_type = s2;
@@ -45,7 +48,7 @@ public class ObjConfig
         return file;
     }
 
-    public Scale2 getScaleType() {
+    public Scale getScaleType() {
         return scale_type;
     }
 

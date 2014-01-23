@@ -8,7 +8,7 @@ import com.sun.opengl.util.texture.Texture;
 import universetournament.client.rendering.ressourcen.resmanagment.*;
 import universetournament.client.rendering.shaders.StandartShader;
 import universetournament.client.rendering.geometrie.packed.*;
-import universetournament.client.util.io.obj.OBJObjektReader;
+import universetournament.client.util.io.obj.ObjObjektReader;
 import universetournament.shared.logic.entities.ingame.container.SimpleTransformation;
 
 /**
@@ -26,7 +26,7 @@ public class ScreenQuad
                                                   "ScreenQuad.frag");
         RenderObjekt ro = new RenderObjekt(squad, new SimpleTransformation());
         RessourcesLoader.getInstance().loadRenderObjekt(ro, new ObjConfig(
-                "Models/quad.obj", true, OBJObjektReader.Scale2.HEIGHT, 2f));
+                "Models/quad.obj", true, ObjObjektReader.Scale.HEIGHT, 2f));
                   
         quad = ro;
     }
