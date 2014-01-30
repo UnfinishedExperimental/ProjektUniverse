@@ -1,0 +1,8 @@
+<universetournament.shared.data.proto.BlasterConfig>
+  <uid>12</uid>
+  <name>small_blaster</name>
+  <description>kleiner Blaster</description>
+  <coolDownTime>100.0</coolDownTime>
+  <energyDrain>1</energyDrain>
+  <shotConfig>14</shotConfig>
+</universetournament.shared.data.proto.BlasterConfig>

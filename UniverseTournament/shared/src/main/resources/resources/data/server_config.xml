@@ -1,0 +1,8 @@
+<universetournament.server.config.ServerConfig>
+  <port>6667</port>
+  <password></password>
+  <gameType>DEATH_MATCH</gameType>
+  <timeLimit>700.0</timeLimit>
+  <scoreLimit>20</scoreLimit>
+  <playerLimit>8</playerLimit>
+</universetournament.server.config.ServerConfig>

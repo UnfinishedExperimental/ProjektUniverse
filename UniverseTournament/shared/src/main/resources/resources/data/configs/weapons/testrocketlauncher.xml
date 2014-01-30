@@ -1,0 +1,7 @@
+<universetournament.shared.data.proto.RLauncherConfig>
+  <uid>10</uid>
+  <name>Test-Raketenwerfer</name>
+  <description>einfacher Testraketenwerfer</description>
+  <coolDownTime>5000.0</coolDownTime>
+  <rocketConfig>11</rocketConfig>
+</universetournament.shared.data.proto.RLauncherConfig>

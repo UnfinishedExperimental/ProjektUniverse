@@ -1,0 +1,16 @@
+#  ==========================================================================
+#  Wavefront Material file
+#  Exported by Red-i Productions' "Riptide Pro"
+#  (a commercial plugin for Cinema 4D PC & Mac, R9.6 or later)
+#  
+#  Red-i Productions
+#  http://skinprops.com
+#  
+#  ==========================================================================
+
+newmtl Tempel.1
+illum 2
+Kd 0.800000 0.800000 0.800000
+Ka 0.300000 0.300000 0.300000
+map_Kd Tempel.dds
+bump Tempel_Bump.jpg

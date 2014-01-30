@@ -1,0 +1,21 @@
+newmtl file1SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Metal_gelb.dds
+Ni 1.00
+newmtl file2SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd MetalRivets0012_S_schraub.dds
+Ni 1.00
+newmtl pasted__file2SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd MetalRivets0012_S_schraub.dds
+Ni 1.00

@@ -1,0 +1,21 @@
+<universetournament.shared.data.proto.PDecConfig>
+  <uid>16</uid>
+  <name>dec_1</name>
+  <description>Dekoration</description>
+  <renderconfig>
+    <shader__vertex>Phong.vert</shader__vertex>
+    <shader__frag>Phong.frag</shader__frag>
+    <objconf>
+      <file>Models/meteroit.obj</file>
+      <centered>false</centered>
+      <scale__type>ABSOLUTE</scale__type>
+      <scale>10.0</scale>
+    </objconf>
+    <roclass>universetournament.client.rendering.geometrie.packed.RenderObjekt</roclass>
+    <shaderclass>universetournament.client.rendering.shaders.PhongShader</shaderclass>
+  </renderconfig>
+  <pConf>
+    <mass>2000.0</mass>
+    <radius>11.0</radius>
+  </pConf>
+</universetournament.shared.data.proto.PDecConfig>

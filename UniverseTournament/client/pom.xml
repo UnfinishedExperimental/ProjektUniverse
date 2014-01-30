@@ -18,12 +18,12 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.github.danny02</groupId>
+      <groupId>com.github.danny02.darwin</groupId>
       <artifactId>Renderer</artifactId>
       <version>${darwin.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.github.danny02</groupId>
+      <groupId>com.github.danny02.darwin</groupId>
       <artifactId>Core</artifactId>
       <version>${darwin.version}</version>
     </dependency>

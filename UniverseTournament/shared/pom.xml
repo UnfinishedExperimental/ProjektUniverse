@@ -12,7 +12,7 @@
     <name>shared</name>
     <dependencies>
         <dependency>
-            <groupId>com.github.danny02</groupId>
+            <groupId>com.github.danny02.darwin</groupId>
             <artifactId>Util</artifactId>
             <version>${darwin.version}</version>
         </dependency>
@@ -22,7 +22,7 @@
             <version>1.4.5</version>
         </dependency>
         <dependency>
-            <groupId>com.github.danny02</groupId>
+            <groupId>com.github.danny02.darwin</groupId>
             <artifactId>ResourceHandling</artifactId>
             <version>${darwin.version}</version>
         </dependency>

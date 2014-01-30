@@ -1,21 +1,21 @@
 package de.fhhof.universe.shared.data.proto.util;
 
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+import darwin.resourcehandling.dependencies.ResourceHandlingModul;
 import darwin.resourcehandling.dependencies.ResourceInjector;
-import java.io.File;
+import darwin.resourcehandling.handle.ClasspathHelper;
 
 import de.fhhof.universe.shared.data.proto.Config;
-import de.fhhof.universe.shared.util.io.UTXMLReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.net.URLDecoder;
-import java.util.Enumeration;
+import java.nio.file.Paths;
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -30,15 +30,22 @@ import javax.inject.Singleton;
 @Singleton
 public class ConfigurationLookUp {
 
-    private static final String STD_PATH = "data/configs";
-
-    private final ResourceInjector injector;
+    private static final String STD_PATH = "resources/data/configs/";
 
     private final Map<Short, Config> configurations = new HashMap<>();
 
     @Inject
     public ConfigurationLookUp(ResourceInjector injector) {
-        this.injector = injector;
+        try {
+            Collection<URL> configs = ClasspathHelper.elementsOfFolder(STD_PATH);
+            for (URL url : configs) {
+                System.out.println(Paths.get(url.));
+                Config conf = injector.get(new ConfigLoader(), url.getPath().substring(1));
+                configurations.put(conf.getUid(), conf);
+            }
+        } catch (IOException | URISyntaxException ex) {
+            Logger.getLogger(ConfigurationLookUp.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -63,58 +70,8 @@ public class ConfigurationLookUp {
         return result;
     }
 
-    /**
-     * Liest alle in der Liste befindlichen Konfigurationen ein, bei denen dies
-     * möglich ist und trägt sie in den ConfigurationManager ein.
-     */
-    private void readAll() {
-
-//        UTXMLReader reader = new UTXMLReader();
-//        String[] paths = reader.read(String[].class, configList);
-//
-//        if (paths != null) {
-//            File config = null;
-//
-//            for (String path : paths) {
-//                config = new File(path);
-//                readConfig(config);
-//            }
-//        }
-    }
-
-    String[] getResourceListing(String path) throws URISyntaxException, IOException {
-        String me = ConfigurationLookUp.class.getName().replace(".", "/") + ".class";
-        URL dirURL = ConfigurationLookUp.class.getClassLoader().getResource(me);
-
-        if (dirURL.getProtocol().equals("jar")) {
-            /* A JAR path */
-            String jarPath = dirURL.getPath().substring(5, dirURL.getPath().indexOf("!")); //strip out only the JAR file
-            JarFile jar = new JarFile(URLDecoder.decode(jarPath, "UTF-8"));
-            Enumeration<JarEntry> entries = jar.entries(); //gives ALL entries in jar
-            Set<String> result = new HashSet<String>(); //avoid duplicates in case it is a subdirectory
-            while (entries.hasMoreElements()) {
-                String name = entries.nextElement().getName();
-                if (name.startsWith(path)) { //filter according to the path
-                    String entry = name.substring(path.length());
-                    int checkSubdir = entry.indexOf("/");
-                    if (checkSubdir >= 0) {
-                        // if it is a subdirectory, we just return the directory name
-                        entry = entry.substring(0, checkSubdir);
-                    }
-                    result.add(entry);
-                }
-            }
-            return result.toArray(new String[result.size()]);
-        }
-
-        throw new UnsupportedOperationException("Cannot list files for URL " + dirURL);
-    }
-
-    private void readConfig(File config) {
-        UTXMLReader reader = new UTXMLReader();
-        Config c = reader.read(Config.class, config);
-        if (c != null) {
-            configurations.put(c.getUid(), c);
-        }
+    public static void main(String[] args) {
+        Injector inj = Guice.createInjector(new ResourceHandlingModul());
+        ConfigurationLookUp lp = inj.getInstance(ConfigurationLookUp.class);
     }
 }

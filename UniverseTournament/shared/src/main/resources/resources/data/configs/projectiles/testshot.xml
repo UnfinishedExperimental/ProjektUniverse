@@ -1,0 +1,26 @@
+<universetournament.shared.data.proto.ProjectileConfig>
+  <uid>3</uid>
+  <name>Test-Projektil</name>
+  <description>einfaches Test-Projektil</description>
+  <renderconfig>
+    <shader__vertex>Phong.vert</shader__vertex>
+    <shader__frag>Phong.frag</shader__frag>
+    <objconf>
+      <file>Models/shot.obj</file>
+      <centered>false</centered>
+      <scale__type>DEPTH</scale__type>
+      <scale>4.5</scale>
+    </objconf>
+    <roclass>universetournament.client.rendering.geometrie.packed.RObjekt2</roclass>
+    <shaderclass>universetournament.client.rendering.shaders.PhongShader</shaderclass>
+  </renderconfig>
+  <speed>50.0</speed>
+  <lifeTime>3.0</lifeTime>
+  <hullDamage>100</hullDamage>
+  <shieldDamage>100</shieldDamage>
+  <physic__props>
+    <mass>1.0</mass>
+    <radius>0.5</radius>
+  </physic__props>
+</universetournament.shared.data.proto.ProjectileConfig>
+

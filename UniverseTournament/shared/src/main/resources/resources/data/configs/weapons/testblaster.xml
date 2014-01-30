@@ -1,0 +1,8 @@
+<universetournament.shared.data.proto.BlasterConfig>
+  <uid>2</uid>
+  <name>Test-Blaster</name>
+  <description>einfacher Testblaster</description>
+  <coolDownTime>250.0</coolDownTime>
+  <energyDrain>1</energyDrain>
+  <shotConfig>3</shotConfig>
+</universetournament.shared.data.proto.BlasterConfig>
